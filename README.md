@@ -42,7 +42,7 @@ This ETL pipeline is scheduled to run daily using Airflow’s scheduling system.
 
 🛠️ Getting Started
 # 1. Clone the Repository
-  2. ```bash
+        ```bash
      git clone https://github.com/kebishaa/End-To-End-ETL-Pipeline-Using-AirFlow-And-Astro.git
   cd End-To-End-ETL-Pipeline-Using-AirFlow-And-Astro
 
