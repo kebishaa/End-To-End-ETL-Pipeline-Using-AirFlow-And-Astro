@@ -32,6 +32,7 @@ This ETL pipeline is scheduled to run daily using Airflow’s scheduling system.
       schedule='@daily'
       catchup=False
 
+![DAG](https://github.com/kebishaa/End-To-End-ETL-Pipeline-Using-AirFlow-And-Astro/blob/main/images/photo_2025-06-13_12-55-49.jpg?raw=true)
  # Tasks:
 
 ● extract_weather_data: Connects to the Open-Meteo API using Airflow’s HttpHook and retrieves current weather data.
