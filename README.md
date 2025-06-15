@@ -27,16 +27,34 @@ This ETL pipeline is scheduled to run daily using Airflow’s scheduling system.
 ● Docker (via Astro for environment management)
 
 # 🗂️ DAG Structure
-```bash
-dag_id='weather_etl_pipeline'
-schedule='@daily'
-catchup=False
+     ```bash
+      dag_id='weather_etl_pipeline'
+      schedule='@daily'
+      catchup=False
 
-# Tasks:
+ # Tasks:
 
-extract_weather_data: Connects to the Open-Meteo API using Airflow’s HttpHook and retrieves current weather data.
+● extract_weather_data: Connects to the Open-Meteo API using Airflow’s HttpHook and retrieves current weather data.
 
-transform_weather_data: Extracts relevant fields such as temperature, windspeed, and weather code from the JSON response.
+● transform_weather_data: Extracts relevant fields such as temperature, windspeed, and weather code from the JSON response.
 
-load_weather_data: Creates a weather_data table (if not exists) and inserts the transformed data into PostgreSQL using PostgresHook.
+● load_weather_data: Creates a weather_data table (if not exists) and inserts the transformed data into PostgreSQL using PostgresHook.
 
+🛠️ Getting Started
+# 1. Clone the Repository
+  2. ```bash
+     git clone https://github.com/kebishaa/End-To-End-ETL-Pipeline-Using-AirFlow-And-Astro.git
+  cd End-To-End-ETL-Pipeline-Using-AirFlow-And-Astro
+
+# 2. Install Astro CLI (if not installed)
+Follow Astro CLI installation from: https://docs.astronomer.io/astro/install-cli
+# 3. Start the Airflow Project
+     ```bash
+    astro dev start
+# 4. Access the Airflow UI
+Visit ```bash http://localhost:8080
+Login with:
+
+Username: admin
+
+Password: admin
