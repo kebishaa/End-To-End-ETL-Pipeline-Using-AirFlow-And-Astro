@@ -52,9 +52,26 @@ Follow Astro CLI installation from: https://docs.astronomer.io/astro/install-cli
      ```bash
     astro dev start
 # 4. Access the Airflow UI
-Visit ```bash http://localhost:8080
+Visit http://localhost:8080
+
 Login with:
 
 Username: admin
 
 Password: admin
+# 5. Setup Airflow Connections
+In Airflow UI → Admin → Connections:
+Connection ID: open_meteo_api
+
+Type: HTTP
+
+Host: https://api.open-meteo.com
+
+Connection ID: postgres_default
+
+Type: Postgres
+
+Host: postgres
+
+Schema, Login, Password should match your Docker Postgres config.
+
