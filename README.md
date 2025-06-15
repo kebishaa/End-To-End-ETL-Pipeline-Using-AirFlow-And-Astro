@@ -49,7 +49,7 @@ This ETL pipeline is scheduled to run daily using Airflow’s scheduling system.
 # 2. Install Astro CLI (if not installed)
 Follow Astro CLI installation from: https://docs.astronomer.io/astro/install-cli
 # 3. Start the Airflow Project
-     ```bash
+   4  ```bash
     astro dev start
 # 4. Access the Airflow UI
 Visit http://localhost:8080
