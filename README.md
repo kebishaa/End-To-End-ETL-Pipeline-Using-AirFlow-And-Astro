@@ -69,11 +69,12 @@ Host: https://api.open-meteo.com
 
 Connection ID: postgres_default
 
-![Final Table on postgres](https://github.com/kebishaa/End-To-End-ETL-Pipeline-Using-AirFlow-And-Astro/blob/main/images/photo_2025-06-13_12-55-42.jpg?raw=true)
-
 Type: Postgres
 
 Host: postgres
 
 Schema, Login, Password should match your Docker Postgres config.
+
+![Final Table on postgres](https://github.com/kebishaa/End-To-End-ETL-Pipeline-Using-AirFlow-And-Astro/blob/main/images/photo_2025-06-13_12-55-42.jpg?raw=true)
+
 
