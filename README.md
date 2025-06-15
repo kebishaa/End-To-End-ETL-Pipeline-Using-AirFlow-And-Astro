@@ -31,3 +31,12 @@ This ETL pipeline is scheduled to run daily using Airflow’s scheduling system.
 dag_id='weather_etl_pipeline'
 schedule='@daily'
 catchup=False
+
+# Tasks:
+
+extract_weather_data: Connects to the Open-Meteo API using Airflow’s HttpHook and retrieves current weather data.
+
+transform_weather_data: Extracts relevant fields such as temperature, windspeed, and weather code from the JSON response.
+
+load_weather_data: Creates a weather_data table (if not exists) and inserts the transformed data into PostgreSQL using PostgresHook.
+
